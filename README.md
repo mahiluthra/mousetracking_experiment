@@ -1,2 +1,2 @@
 # mousetracking_experiment
-Mousetracking psychology experiments designed on JavaScript
+Web-based mousetracking experiment and analyses tools
