@@ -5,6 +5,8 @@ Experiment structure and analyses are inspired by Freeman and Ambady (2010; http
 
 The experiment has been designed on JavaScript using the jsPsych library (https://www.jspsych.org/). Since this experiment is browser based, it can be conveniently used for online experiments (e.g., on MTurk). However, given that online experiments have less controlled environments, reliability might be affected.
 
-Javascript code for a sample mousetracking experiment has been included-- other experiments can be adapted from it. The sample experiment can also be found here. By default the experiment tracks mouse-coordinates in a 600x1000 pixel container. These dimensions can easily be altered. The current code is unable to identify the screen dimensions of the use and adapt accordingly. R code for cleaning, simple analyses (timenormalizing coordinates, calculating area under the curve), and plotting have been included. Below is an example of mouse trajectory plots that result from this experiment.
+The jspsych directory includes plugins needed to create a mouse tracking experiment. Code for a sample mousetracking experiment has also been included-- other experiments can be adapted from this sample experiment. The sample experiment is also available here for demonstration. By default the experiment tracks mouse-coordinates in a 600x1000 pixel container. These dimensions can easily be altered. The current code is unable to identify the screen dimensions of the user and adapt accordingly. 
+
+R code for cleaning data, conducting simple analyses (timenormalizing coordinates, calculating area under the curve), and plotting have been included. Below is an example of mouse trajectory plots resulting from this experiment. More complex analyses methods can easily be conducting using cleaned mouse trajectory data.
 
 ![mt_fig](mt_fig.png)
