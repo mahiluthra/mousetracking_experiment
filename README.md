@@ -5,7 +5,7 @@ Experiment structure and analyses are inspired by Freeman and Ambady (2010; http
 
 The experiment has been designed on JavaScript using the jsPsych library (https://www.jspsych.org/). Since this experiment is browser based, it can be conveniently used for online experiments (e.g., on MTurk). However, given that online experiments have less controlled environments, reliability might be affected.
 
-The jspsych directory (_jspsych-6.0.4.zip_) includes plugins needed to create a mouse tracking experiment. Code for a sample mousetracking experiment has also been included (_mousetracking.html_)-- other experiments can be adapted from this sample experiment. The _mt_img_ folder includes images for this sample experiment--please download if you want to run the sample experiment! A quick demo of the sample experiment can be found here: https://abcwest.sitehost.iu.edu/mkl/mousetracking/mousetracking.html
+The jspsych directory (_jspsych-6.0.4_) includes plugins needed to create a mouse tracking experiment. Code for a sample mousetracking experiment has also been included (_mousetracking.html_)-- other experiments can be adapted from this sample experiment. The _mt_img_ folder includes images for this sample experiment--please download if you want to run the sample experiment! A quick demo of the sample experiment can be found here: https://abcwest.sitehost.iu.edu/mkl/mousetracking/mousetracking.html
 
 By default the experiment tracks mouse-coordinates in a 1000x600 pixel container. These dimensions can easily be altered. The current code is unable to identify the screen dimensions of the user and adapt accordingly.
 
