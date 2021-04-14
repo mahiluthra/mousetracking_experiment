@@ -9,6 +9,6 @@ The jspsych directory (_jspsych-6.0.4_) includes plugins needed to create a mous
 
 By default the experiment tracks mouse-coordinates in a 1000x600 pixel container. These dimensions can easily be altered. The current code is unable to identify the screen dimensions of the user and adapt accordingly.
 
-R code for cleaning data, conducting simple analyses (timenormalizing coordinates, calculating area under the curve), and plotting have been included. Below is an example of mouse trajectory plots resulting from this code. More complex analyses methods can easily be conducting using cleaned mouse trajectory data.
+R code for cleaning data, conducting simple analyses (timenormalizing coordinates, calculating area under the curve), and plotting have been included. Below is an example of mouse trajectory plots resulting from this code. More complex analyses methods can easily be conducting using cleaned mouse trajectory data. A sample data file (_mousetracking_sample_1598874777019.csv_) resulting from this experiment has also been included.
 
 ![mt_fig](mt_fig.png)
