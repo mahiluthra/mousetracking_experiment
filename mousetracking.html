@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Task 5</title>
+    <title>Mousetracking</title>
     <script src="jspsych-6.0.4/jspsych.js"></script>
     <script src="jspsych-6.0.4/plugins/jspsych-mousetracking.js"></script>
     <script src="jspsych-6.0.4/plugins/jspsych-survey-text.js"></script>
@@ -29,11 +29,11 @@ file_name = null // file name for data file. if null, a default name consisting 
 local = true // save the data file locally.
               // If this test is being run online (e.g., on MTurk), true will cause the file to be downloaded to the participant's computer.
               // If this test is on a server and you wish to save the data file to that server, change this to false.
-              // If changed to false ensure that the php file (its in the folder!) and the "data" folder have also been appropriately uploaded to the server.
+              // If changed to false ensure that the php file (its in the directory!) and the empty "data" folder have also been appropriately uploaded to the server.
 
 /*create timeline*/
 var timeline = [];
-var nMain = 5 // number of images
+var nMain = 5 // number of trials
 
 var test_stimuli = []  // sets up a directory of stimuli
 var images = []
@@ -70,11 +70,11 @@ var instructions = {
     type: "mousetracking",
     stimulus: jsPsych.timelineVariable('stimulus'),
     choices :['cute', 'scary']
-  } // the mousetracking part of this task occurs in a 1000x600px container-- these dimensions can be altered
+  } // the mousetracking part of this task occurs in a 1000x600px container-- these dimensions can be altered by changing the jspsych mousetracking plugin in the jspsych folder
 
   var recenter = {
     type: "recenter"
-  } // if altering the dimensions of container in mousetracking plugin, please also do so in the recenter plugin
+  } // if altering the dimensions of container in mousetracking plugin, please also do so in the recenter plugin in the jspsych folder
 
   var conclusion = {
     type: 'html-keyboard-response',
@@ -147,7 +147,7 @@ jsPsych.init({
   timeline: timeline,
   preload_images: images,
   on_finish: function() {
-  jsPsych.data.displayData();
+  jsPsych.data.displayData(); // remove this on_finish command if you do not want to display data at the end of experiment
 }
 });
 </script>
